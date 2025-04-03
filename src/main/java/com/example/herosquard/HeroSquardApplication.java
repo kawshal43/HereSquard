@@ -20,7 +20,7 @@ public class HeroSquardApplication {
         Hero wonderWoman2 = (Hero) context.getBean(WonderWoman.class);
         wonderWoman2.action();
 
-        // Checking
+        //Checking
         System.out.println("Are WonderWoman instances the same? " + (wonderWoman1 == wonderWoman2));
     }
 }
