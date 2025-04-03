@@ -8,16 +8,16 @@ public class HeroSquardApplication {
         ApplicationContext context = new ClassPathXmlApplicationContext("heroes.xml");
 
 
-        Hero superman = (Hero) context.getBean(Superman.class);
+        Hero superman = context.getBean(Superman.class);
         superman.action();
 
-        Hero talkingCat = (Hero) context.getBean(TalkingCat.class);
+        Hero talkingCat = context.getBean(TalkingCat.class);
         talkingCat.action();
 
-        Hero wonderWoman1 = (Hero) context.getBean(WonderWoman.class);
+        Hero wonderWoman1 = context.getBean(WonderWoman.class);
         wonderWoman1.action();
 
-        Hero wonderWoman2 = (Hero) context.getBean(WonderWoman.class);
+        Hero wonderWoman2 = context.getBean(WonderWoman.class);
         wonderWoman2.action();
 
         //Checking
